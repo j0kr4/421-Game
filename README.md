@@ -27,4 +27,10 @@ Pour lancer le jeu, ouvrez un terminal, naviguez jusqu'au répertoire contenant 
 
 ```python3 PGJeu421.py```
 
+## Règle du jeu
+
+Le but du jeu est d'obtenir la combinaison 4-2-1 aux dès dans n'importe quel sens.
+Un dès qui obtient un 6 doit être relancer.
+Un joueur qui a fait 6 pendant son tour à le droit à un nouveau tour.
+
 Amusez-vous bien !
