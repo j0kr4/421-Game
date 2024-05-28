@@ -30,6 +30,9 @@ class Game:
             die.value = random.randint(1, 6)
         self.player.score += sum(die.value for die in dice)
         self.dice_rolled = True
+        if self.check_victory():
+            global game_over
+            game_over = True
 
     def reroll_sixes(self):
         for die in dice:
@@ -37,6 +40,10 @@ class Game:
                 self.player.score -= 6
                 die.value = random.randint(1, 6)
                 self.player.score += die.value
+        if self.check_victory():
+            global game_over
+            game_over = True
+
     
     def reset(self):
         self.player.score = 0
